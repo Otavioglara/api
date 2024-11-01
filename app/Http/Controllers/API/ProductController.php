@@ -48,4 +48,5 @@ class ProductController extends Controller
         Products::destroy($id);
         return response()->json(null, 204);
     }
+    
 }
