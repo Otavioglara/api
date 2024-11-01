@@ -10,6 +10,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('products', ProductController::class);
-
-
+Route::post('/image-url', [ImageController::class, 'storeImageUrl']);
 Route::apiResource('categories', CategoriesController::class);
